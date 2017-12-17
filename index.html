@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystals</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" style="background-color: transparent;">
+            <img class="img-responsive center-block" src="./assets/images/logo.png" alt="logo" style="width:50%">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4" style="overflow:auto;">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 style="margin:5px 0px 5px 0px;">Crystal Game Instructions:</h3>
+                    </div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis placerat est ut commodo. Quisque in aliquet erat,
+                        sit amet sodales ipsum. Proin ullamcorper eget ipsum vel laoreet. Ut volutpat mollis metus at laoreet.
+                        Ut nulla nunc, egestas convallis mauris eget, facilisis viverra ante. Quisque congue porttitor faucibus.
+                        Curabitur rutrum urna et nulla rutrum, vitae elementum nisl suscipit. Maecenas vel mi pulvinar, elementum
+                        leo at, pharetra odio.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="crystals">
+                    <img id="crystal1" src="./assets/images/sapphire.png" alt="sapphire">
+                    <img id="two" src="./assets/images/ameythest.png" alt="ameythest">
+                    <img id="third" src="./assets/images/ruby.png" alt="ruby">
+                    <img id="fourth" src="./assets/images/diamond.png" alt="diamond">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-2" style="overflow:auto; text-align: center;">
+                <div class="panel panel-default" style="text-align: center;">
+                    <div class="panel-heading">Your Number is:</div>
+                    <div class="panel-body">
+                        <div id="random">0</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Your Current Value</div>
+                    <div class="panel-body" style="height: 50px;">
+                        <div id="userNumber">0</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Gameplay Stats</div>
+                    <div class="panel-body">
+                        <div>Wins:
+                            <div id="winCount">0</div>
+                        </div>
+                        <div>Losses:
+                            <div id="lossCount">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="panel-footer" style="text-align: center;">&copy; 2017 Anthony Kim</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
