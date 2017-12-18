@@ -20,13 +20,13 @@ $(document).ready(function () {
     var targetNumber = Math.floor(Math.random() * 101 + 19);
     $("#random").html(targetNumber);
 
-    var crystalValue1 = Math.floor(Math.random() * 10 + 1);
+    var crystalValue1 = Math.floor(Math.random() * 11 + 1);
     console.log(crystalValue1);
-    var crystalValue2 = Math.floor(Math.random() * 10 + 1);
+    var crystalValue2 = Math.floor(Math.random() * 11 + 1);
     console.log(crystalValue2);
-    var crystalValue3 = Math.floor(Math.random() * 10 + 1);
+    var crystalValue3 = Math.floor(Math.random() * 11 + 1);
     console.log(crystalValue3);
-    var crystalValue4 = Math.floor(Math.random() * 10 + 1);
+    var crystalValue4 = Math.floor(Math.random() * 11 + 1);
     console.log(crystalValue4);
 
 
@@ -35,10 +35,10 @@ $(document).ready(function () {
     function resetGame() {
         targetNumber = Math.floor(Math.random() * 101 + 19);
         $("#random").html(targetNumber);
-        crystalValue1 = Math.floor(Math.random() * 10 + 1);
-        crystalValue2 = Math.floor(Math.random() * 10 + 1);
-        crystalValue3 = Math.floor(Math.random() * 10 + 1);
-        crystalValue4 = Math.floor(Math.random() * 10 + 1);
+        crystalValue1 = Math.floor(Math.random() * 11 + 1);
+        crystalValue2 = Math.floor(Math.random() * 11 + 1);
+        crystalValue3 = Math.floor(Math.random() * 11 + 1);
+        crystalValue4 = Math.floor(Math.random() * 11 + 1);
         userValue = 0;
         $("#userNumber").html(userValue);
     }
