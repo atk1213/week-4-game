@@ -1,6 +1,3 @@
-//Starting with Pseudocode
-
-//need to have jQuery set up so that the application runs/initializes when document is loaded (document).ready())
 $(document).ready(function () {
 
     var start = new Audio("assets/audio/whip.wav");
@@ -48,8 +45,6 @@ $(document).ready(function () {
 
     //function (.on("click", function()) for the crystals (need to add crystal's number to the user's value, update
     //user's value on game screen,)
-
-    //On click event for crystals
     $('#crystal1').on("click", function () {
         var click = new Audio("assets/audio/crystals.mp3");
         click.play();
@@ -102,6 +97,4 @@ $(document).ready(function () {
             resetGame();
         }
     }
-
-
 })
