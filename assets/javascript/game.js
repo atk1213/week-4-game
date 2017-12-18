@@ -3,6 +3,8 @@
 //need to have jQuery set up so that the application runs/initializes when document is loaded (document).ready())
 $(document).ready(function () {
 
+    var start = new Audio("assets/audio/whip.wav");
+    start.play();
     //define global variables (wins, losses, user's value, target value)
 
     var wins = 0;
@@ -49,24 +51,32 @@ $(document).ready(function () {
 
     //On click event for crystals
     $('#crystal1').on("click", function () {
+        var click = new Audio("assets/audio/crystals.mp3");
+        click.play();
         userValue = userValue + crystalValue1;
         $('#userNumber').html(userValue);
         check();
     });
 
     $('#crystal2').on("click", function () {
+        var click = new Audio("assets/audio/crystals.mp3");
+        click.play();
         userValue = userValue + crystalValue2;
         $('#userNumber').html(userValue);
         check();
     });
 
     $('#crystal3').on("click", function () {
+        var click = new Audio("assets/audio/crystals.mp3");
+        click.play();
         userValue = userValue + crystalValue3;
         $('#userNumber').html(userValue);
         check();
     });
 
     $('#crystal4').on("click", function () {
+        var click = new Audio("assets/audio/crystals.mp3");
+        click.play();
         userValue = userValue + crystalValue4;
         $('#userNumber').html(userValue);
         check();
@@ -76,12 +86,16 @@ $(document).ready(function () {
     //create win/lose conditions (if/else)
     function check() {
         if (userValue == targetNumber) {
+            var win = new Audio("assets/audio/indy.mp3");
+            win.play();
             alert("You have chosen...wisely");
             wins++;
             $("#winCount").html(wins);
             resetGame();
         }
         else if (userValue > targetNumber) {
+            var lose = new Audio("assets/audio/poorly.mp3");
+            lose.play();
             alert("You have chosen...poorly");
             losses++;
             $("#lossCount").html(losses);
