@@ -56,87 +56,94 @@ $(document).ready(function () {
     $('#crystal1').on("click", function () {
         userValue = userValue + crystalValue1;
         $('#userNumber').html(userValue);
+        check();
         //Sets win/lose conditions
-        if (userValue == targetNumber) {
-            alert("Nice! You won!");
-            wins++;
-            $("#winCount").html(wins);
-            resetGame(); 
-        }
-        else if (userValue > targetNumber) {
-            alert("Nice! You wo...wait...sorry, you lost...try again!");
-            losses++;
-            $("#lossCount").html(losses);
-            resetGame();
-        }
+        // if (userValue == targetNumber) {
+        //     alert("Nice! You won!");
+        //     wins++;
+        //     $("#winCount").html(wins);
+        //     resetGame(); 
+        // }
+        // else if (userValue > targetNumber) {
+        //     alert("Nice! You wo...wait...sorry, you lost...try again!");
+        //     losses++;
+        //     $("#lossCount").html(losses);
+        //     resetGame();
+        // }
     });
 
     $('#crystal2').on("click", function () {
         userValue = userValue + crystalValue2;
         $('#userNumber').html(userValue);
-        if (userValue == targetNumber) {
-            alert("Nice! You won!");
-            wins++;
-            $("#winCount").html(wins);
-            resetGame(); 
-        }
-        else if (userValue > targetNumber) {
-            alert("Nice! You wo...wait...sorry, you lost...try again!");
-            losses++;
-            $("#lossCount").html(losses);
-            resetGame();
-        }
+        check();
+        // if (userValue == targetNumber) {
+        //     alert("Nice! You won!");
+        //     wins++;
+        //     $("#winCount").html(wins);
+        //     resetGame(); 
+        // }
+        // else if (userValue > targetNumber) {
+        //     alert("Nice! You wo...wait...sorry, you lost...try again!");
+        //     losses++;
+        //     $("#lossCount").html(losses);
+        //     resetGame();
+        // }
     });
 
 
     $('#crystal3').on("click", function () {
         userValue = userValue + crystalValue3;
         $('#userNumber').html(userValue);
-        if (userValue == targetNumber) {
-            alert("Nice! You won!");
-            wins++;
-            $("#winCount").html(wins);
-            resetGame(); 
-        }
-        else if (userValue > targetNumber) {
-            alert("Nice! You wo...wait...sorry, you lost...try again!");
-            losses++;
-            $("#lossCount").html(losses);
-            resetGame();
-        }
+        check();
+        // if (userValue == targetNumber) {
+        //     alert("Nice! You won!");
+        //     wins++;
+        //     $("#winCount").html(wins);
+        //     resetGame(); 
+        // }
+        // else if (userValue > targetNumber) {
+        //     alert("Nice! You wo...wait...sorry, you lost...try again!");
+        //     losses++;
+        //     $("#lossCount").html(losses);
+        //     resetGame();
+        // }
     });
 
 
     $('#crystal4').on("click", function () {
         userValue = userValue + crystalValue4;
         $('#userNumber').html(userValue);
-        if (userValue == targetNumber) {
-            alert("Nice! You won!");
-            wins++;
-            $("#winCount").html(wins);
-            resetGame(); 
-        }
-        else if (userValue > targetNumber) {
-            alert("Nice! You wo...wait...sorry, you lost...try again!");
-            losses++;
-            $("#lossCount").html(losses);
-            resetGame();
-        }
+        check();
+        // if (userValue == targetNumber) {
+        //     alert("You have chosen...wisely");
+        //     wins++;
+        //     $("#winCount").html(wins);
+        //     resetGame(); 
+        // }
+        // else if (userValue > targetNumber) {
+        //     alert("You have chosen...poorly");
+        //     losses++;
+        //     $("#lossCount").html(losses);
+        //     resetGame();
+        // }
     });
 
 
     //create win/lose conditions (if/else)
-    // if (userValue == targetNumber) {
-    //     alert("Nice! You won!");
-    //     wins++;
-    //     $("#winCount").html(wins);
-    // }
-    // else if (userValue > targetNumber) {
-    //     alert("Nice! You wo...wait...sorry, you lost...try again!");
-    //     losses++;
-    //     $("#lossCount").html(losses);
-    //     //run reset game function;
-    // }
+    function check() {
+        if (userValue == targetNumber) {
+            alert("You have chosen...wisely");
+            wins++;
+            $("#winCount").html(wins);
+            resetGame();
+        }
+        else if (userValue > targetNumber) {
+            alert("You have chosen...poorly");
+            losses++;
+            $("#lossCount").html(losses);
+            resetGame();
+        }
+    }
 
 
 })
